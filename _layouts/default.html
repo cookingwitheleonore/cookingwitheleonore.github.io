@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  <body>
+    {% if 1==0 %}
+      {% include header.html %}
+    {% endif %}
+    {{ content }}
+    {% include footer.html %}
+
+  </body>
+
+</html>
