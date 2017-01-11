@@ -8,9 +8,11 @@ layout: default
       <div class="col-lg-12 text-center">
         <h2 style="letter-spacing: 2px; font-weight: 300;">Cooking with Eleonore</h2>
       </div>
+      {% if 1==0 %}
       <div class="col-md-2 col-md-offset-5 text-center" style="margin-top:50px">
         <img class="img-responsive img-circle" src="{{site.cdn_path}}/bsbxuizzmlemb64/about.jpg" style="margin-bottom: 28px" />
       </div>
+      {% endif %}
   </div><!-- /.row -->
 
   <div class="row">
@@ -33,7 +35,7 @@ layout: default
 
       <div class="col-md-8 col-md-offset-2" style="margin-top:50px">
         <h1>HOW IT WORKS</h1>
-        <br>
+        <br><br>
         <p>
           Location: My mother's kitchen on the Upper East Side (conveniantly located minutes away to most schools) or at your house.
           Number of children: Maximum 4.
@@ -59,15 +61,17 @@ layout: default
 
   </div><!-- /.row -->
 </div><!-- /.container -->
-{% endif %}
+
 
 
 <section id="home" class="pfblock-image screen-height">
-      <div class="home-overlay"></div>
+  <div class="home-overlay"></div>
   <div class="intro">
+    {% if 1==0 %}
     <div class="start">
     <img class="img-responsive img-circle" src="{{site.cdn_path}}/bsbxuizzmlemb64/about.jpg" style="margin-bottom: 28px; height:140px;width:140px;display:block;margin:auto" />
     </div>
+    {% endif %}
     <h1 style="font-family: 'Waiting for the Sunrise', cursive;">Cooking with Eleonore</h1>
     <div class="start" style="font-size: 24px;font-family: 'Waiting for the Sunrise', cursive;">Learn simple recipes while having fun</div>
   </div>
@@ -99,7 +103,9 @@ layout: default
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        {% if 1 ==0 %}
         <a class="navbar-brand" href="index.html">Eléonore Bébéar</a>
+        {% endif %}
       </div>
 
       <div class="collapse navbar-collapse" id="custom-collapse">
@@ -126,10 +132,16 @@ layout: default
 
       <div class="col-sm-6 col-sm-offset-3">
 
+        <div class="col-md-12 text-center" style="margin-top:0px; margin-bottom:80px">
+            <img class="img-responsive img-circle" src="{{site.cdn_path}}/bsbxuizzmlemb64/about.jpg" style="margin-bottom: 28px; height:140px;width:140px;display:block;margin:auto" />
+          </div>
+
         <div class="pfblock-header wow fadeInUp">
           <h2 class="pfblock-title">About</h2>
           <div class="pfblock-line"></div>
+
           <div class="pfblock-subtitle">
+
             <p>
           Hi! My name is Eléonore Cedroni and I've loved cooking for as long as I can remember.
           I can honestly say that there isn't much I enjoy more in life than cooking and eating.
@@ -163,12 +175,12 @@ layout: default
             <h2 class="pfblock-title">How it works</h2>
             <div class="pfblock-line"></div>
             <div class="pfblock-subtitle">
-              Location: My mother's kitchen on the Upper East Side (conveniantly located minutes away to most schools) or at your house.
-          Number of children: Maximum 4.
-          Age of the child: 10 to 18 years old.
-          Price: $50 per child
-          What does the price include: groceries, a recipee card to take home, and snack (eating what they've just cooked)!
-          How long is a class: 1 hour.
+              <h4>Location: My mother's kitchen on the Upper East Side (conveniantly located minutes away to most schools) or at your house.</h4>
+              <h4>Number of children: Maximum 4.</h4>
+              <h4>Age of the child: 10 to 18 years old.</h4>
+              <h4>Price: $50 per child</h4>
+              <h4>What does the price include: groceries, a recipee card to take home, and snack (eating what they've just cooked)!</h4>
+              <h4>How long is a class: 1 hour.</h4>
             </div>
           </div>
 
@@ -209,3 +221,200 @@ layout: default
     </div><!-- .contaier -->
 
   </section>
+
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">How it works</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Recipes</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="home-overlay"></div>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Cooking with Eleonore</h1>
+                <hr>
+                <p>Learn simple recipes while having fun</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <img class="img-responsive img-circle" src="{{site.cdn_path}}/bsbxuizzmlemb64/about.jpg" style="margin-bottom: 28px; height:140px;width:140px;display:block;margin:auto" />
+                    <br>
+                    <h2 class="section-heading">About me</h2>
+                    <hr class="light">
+
+                    <p class="text-faded">
+          Hi! My name is Eléonore Cedroni and I've loved cooking for as long as I can remember.
+          I can honestly say that there isn't much I enjoy more in life than cooking and eating.
+          I am French and like most French people I think that the love of food runs through my veins.
+          I grew up eating homemade meals and cooking with my mom and grandmother.
+        </p>
+
+        <p class="text-faded">
+          Before college I decided to attend culinary school in NYC in order to be able to cook anything my stomach desired.
+          Fast forward 10 years: I graduated culinary school with a Chef's Diploma, did my cooking internship in a 2 star Michelin restaurant in Paris, went to college, graduated with Honors, worked in the food industry where I helped develop one of the most famous French pastry shops internationally as well as organizing cooking classes for children, and finally realized along the way that what I enjoyed most was cooking in my kitchen with young people who are passionate about food and getting their hands dirty.
+          So if your kido loves food, loves to cook, wants to learn how to cook, you've come to the right place!
+        </p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How it works</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-map-marker text-primary sr-icons"></i>
+                        <h3>Location</h3>
+                        <p class="text-muted">My mother's kitchen on the Upper East Side (conveniantly located minutes away to most schools) or at your house.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-users text-primary sr-icons"></i>
+                        <h3>Group</h3>
+                        <p class="text-muted">Number of children: Maximum 4. Age of the child: 10 to 18 years old.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-usd text-primary sr-icons"></i>
+                        <h3>Price</h3>
+                        <p class="text-muted">$50 per child. That includes groceries and a recipee card to take home</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-cutlery text-primary sr-icons"></i>
+                        <h3>Class</h3>
+                        <p class="text-muted">Duration: 1 hour, which includes eating what we've just cooked!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">WINTER 2017 CLASSES</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+        <div class="col-sm-6 col-sm-offset-3">
+
+          <div class="pfblock-header wow fadeInUp">
+            <div class="pfblock-subtitle">
+
+            <h3 class="fs18">Crêpes</h3>
+            <p>French pancakes that you eat with jam, nutella, sugar & lemon...</p>
+
+            <br>
+
+            <h3 class="fs18">Madeleines</h3>
+
+            <br>
+
+            <h3 class="fs18">Toasts: sugar pea, mint & pecorino + avocado toast.</h3>
+            <br>
+            <div class="pfblock-line"></div>
+            <p>Something else your child would like to make? Email me and we can figure something out.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div><!-- .row -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next cooking class with me? That's great! Give me a call or send me an email and I will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>917-624-1542</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:e.bebear@gmail.com">e.bebear@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+
+    <script src="/js/creative.min.js"></script>
+
+</body>
