@@ -249,16 +249,16 @@ layout: default
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll fw300" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">How it works</a>
+                        <a class="page-scroll fw300" href="#services">How it works</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Recipes</a>
+                        <a class="page-scroll fw300" href="#portfolio">Recipes</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll fw300" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -271,10 +271,10 @@ layout: default
         <div class="home-overlay"></div>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Cooking with Eleonore</h1>
+                <h1 id="homeHeading" class="fw300">Cooking with Eleonore</h1>
                 <hr>
                 <p>Learn simple recipes while having fun</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll fw300">Find Out More</a>
             </div>
         </div>
     </header>
@@ -282,25 +282,29 @@ layout: default
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="col-lg-8 col-lg-offset-2">
                     <img class="img-responsive img-circle" src="{{site.cdn_path}}/bsbxuizzmlemb64/about.jpg" style="margin-bottom: 28px; height:140px;width:140px;display:block;margin:auto" />
-                    <br>
-                    <h2 class="section-heading">About me</h2>
-                    <hr class="light">
+                    <br><br>
+                    <div class="title-bar text-center">
+                      <h2 class="section-heading fw300">About me</h2>
+                    </div>
 
-                    <p class="text-faded">
-          Hi! My name is Eléonore Cedroni and I've loved cooking for as long as I can remember.
-          I can honestly say that there isn't much I enjoy more in life than cooking and eating.
-          I am French and like most French people I think that the love of food runs through my veins.
-          I grew up eating homemade meals and cooking with my mom and grandmother.
-        </p>
+                    <p class="text-content fw300 text-muted">
+                      Hi! My name is Eléonore Cedroni and I've loved cooking for as long as I can remember.<br>
+                      I grew up eating homemade meals and cooking with my mom and grandmother.
+                    <p class="text-content fw300 text-muted">
+                      Fast forward 10 years: I graduated culinary school with a Chef's Diploma, did my cooking internship in a 2 star Michelin restaurant in Paris,
+                      went to college, graduated with Honors, worked in the food industry where I helped develop one of the most famous French pastry shops internationally. I also organized cooking classes for children.
+                    </p>
+                    <p class="text-content fw300 text-muted">
+                      Today what I enjoy most is cooking in my kitchen with young people who are passionate about food.
+                      So if your child loves food, loves to cook, or wants to learn how to cook, you've come to the right place!
+                    </p>
 
-        <p class="text-faded">
-          Before college I decided to attend culinary school in NYC in order to be able to cook anything my stomach desired.
-          Fast forward 10 years: I graduated culinary school with a Chef's Diploma, did my cooking internship in a 2 star Michelin restaurant in Paris, went to college, graduated with Honors, worked in the food industry where I helped develop one of the most famous French pastry shops internationally as well as organizing cooking classes for children, and finally realized along the way that what I enjoyed most was cooking in my kitchen with young people who are passionate about food and getting their hands dirty.
-          So if your kido loves food, loves to cook, wants to learn how to cook, you've come to the right place!
-        </p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                    <br><br>
+                    <div class="text-center">
+                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button fw300">Get Started!</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -310,47 +314,135 @@ layout: default
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">How it works</h2>
-                    <hr class="primary">
+                  <div class="title-bar text-center">
+                    <h2 class="section-heading fw300">How it works</h2>
+                  </div>
                 </div>
             </div>
         </div>
-        <br><br><br><br><br>
+        <br><br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-map-marker text-primary sr-icons"></i>
-                        <h3>Location</h3>
-                        <p class="text-muted">My mother's kitchen on the Upper East Side (conveniantly located minutes away to most schools) or at your house.</p>
+                        {% if false %}<i class="fa fa-4x fa-map-marker text-blue sr-icons"></i>{% endif %}
+                        <div class=style="height:60px">
+                        <i class="icon-location-pin icons text-blue" style="font-size:3.5em"></i>
+                        </div>
+                        <h3 class="fw300 text-blue">Location</h3>
+                        <p class="text-muted fw300">My mother's kitchen on the Upper East Side (conveniantly located minutes away to most schools) or at your house.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-users text-primary sr-icons"></i>
-                        <h3>Group</h3>
-                        <p class="text-muted">Number of children: Maximum 4. Age of the child: 10 to 18 years old.</p>
+                        {% if false %}
+                        <div class=style="height:60px">
+                          <i class="fa fa-4x fa-users text-blue sr-icons"></i>
+                        </div>
+                        {% endif %}
+                        <div class=style="height:60px">
+                        <i class="icon-people icons text-blue" style="font-size:3.5em"></i>
+                        </div>
+                        <h3 class="fw300 text-blue">Group</h3>
+                        <p class="text-muted fw300">Number of children: Maximum 4. Age of the child: 10 to 18 years old.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-usd text-primary sr-icons"></i>
-                        <h3>Price</h3>
-                        <p class="text-muted">$50 per child. That includes groceries and a recipee card to take home</p>
+                      {% if false %}
+                        <i class="fa fa-4x fa-usd text-blue sr-icons"></i>
+                        {% endif %}
+                        <div class=style="height:60px">
+                        <i class="icon-credit-card icons text-blue" style="font-size:3.5em"></i>
+                        </div>
+                        <h3 class="fw300 text-blue">Price</h3>
+                        <p class="text-muted fw300">$50 per child. That includes groceries and a recipee card to take home</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-cutlery text-primary sr-icons"></i>
-                        <h3>Class</h3>
-                        <p class="text-muted">Duration: 1 hour, which includes eating what we've just cooked!</p>
+                        {% if false %}
+                        <i class="fa fa-4x fa-cutlery text-blue sr-icons"></i>
+                        {% endif %}
+                        <div class=style="height:60px">
+                        <img src="/img/chef-hat.png" alt="" style="height:60px;width:50px">
+                        </div>
+                        <h3 class="fw300 text-blue">Class</h3>
+                        <p class="text-muted fw300">Duration: 1 hour, which includes eating what we've just cooked!</p>
                     </div>
                 </div>
             </div>
         </div>
-        <br><br><br><br><br>
+        <br><br>
     </section>
 
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid portfolio-header">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="portfolio-bar text-center">
+                    <h2 class="section-heading">WINTER 2017 CLASSES</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/mad.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Madeleines
+                                </div>
+                                <div class="project-name">
+                                    Description
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/nutella.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Crepes
+                                </div>
+                                <div class="project-name">
+                                    A French specialty that resembles a very thin pancake.
+                                    They can be dressed up with a number of sweet or savory fillings.
+                                    Even though they're eaten all year round in France it is the custom to eat them on February 2nd for "La Chandeleur".
+                                    {Option to use buckwheat flour to make them gluten free / almond milk to make them dairy free}.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/toast.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Toasts
+                                </div>
+                                <div class="project-name">
+                                  We will be making two recipes of toast on country bread which are great for a light lunch or cut up into small portions for parties.
+                                  Avocado toast, which has become very popular and is one of my personal favorites. Green pea, pecorino & mint toast, which is sweet, refreshing and full of green springtime.
+                                  Both these toasts are simply fabulous!
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% if false %}
     <section class="no-padding" id="portfolio">
         <div class="container">
             <div class="row">
@@ -389,13 +481,55 @@ layout: default
       </div><!-- .row -->
         </div>
     </section>
+    {% endif %}
+
+    {% if false %}
+    <section>
+      <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 text-center">
+          <div class="service-box">
+              <div class="pic-holder" style="position:relative;display:inline-block">
+                <img src="/img/mad.jpg" alt="" style="height:300px;width:300px">
+                <span class="text-content"><span>Place Name</span></span>
+              </div>
+              <h3 class="fw300 text-blue">Toasts</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <div class="service-box">
+              <div class="pic-holder" style="position:relative;display:inline-block">
+                <img src="/img/toast.jpg" alt="" style="height:300px;width:300px">
+                <span class="text-content"><span>Place Name</span></span>
+              </div>
+              <h3 class="fw300 text-blue">Toasts</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box">
+                <div class="pic-holder" style="position:relative;display:inline-block">
+                  <img src="/img/nutella.jpg" alt="" style="height:300px;width:300px">
+                  <span class="text-content"><span>Place Name</span></span>
+                </div>
+                <h3 class="fw300 text-blue">Toasts</h3>
+            </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+    {% endif %}
 
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
+                    <div class="col-lg-12 text-center">
+                        <div class="title-bar text-center">
+                        <h2 class="section-heading">Let's Get In Touch!</h2>
+                        </div>
+                    </div>
                     <p>Ready to start your next cooking class with me? That's great! Give me a call or send me an email and I will get back to you as soon as possible!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
@@ -414,7 +548,6 @@ layout: default
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-
     <script src="/js/creative.min.js"></script>
 
 </body>

@@ -1207,16 +1207,17 @@ html {
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 hr {
   border-color: $orange;
   border-color: $rose;
-  border-width: 3px;
+  border-width: 2px;
   max-width: 50px;
   &.light {
     border-color: white;
+    border-color: $rose;
   }
 }
 
@@ -1245,6 +1246,7 @@ p {
   background-color: #F05F40;
   background-color: $bleu;
   background-color: $rose;
+  background-color: white;
 }
 
 .bg-dark {
@@ -1253,7 +1255,13 @@ p {
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+  // color: rgba(255, 255, 255, 0.7);
+  color: #AAA;
+}
+
+.text-content{
+  // font-size: 18px;
+  // line-height: 2;
 }
 
 section {
@@ -1454,6 +1462,7 @@ header {
 
 .section-heading {
   margin-top: 0;
+  color: $rose;
 }
 
 .service-box {
@@ -1479,7 +1488,9 @@ header {
     color: white;
     opacity: 0;
     display: block;
-    background: rgba(240, 95, 64, 0.9);
+    // background: rgba(240, 95, 64, 0.9);
+    background: $bleu;
+    background: rgba(0, 140, 158, 0.9);
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -1496,7 +1507,9 @@ header {
       transform: translateY(-50%);
       .project-category, .project-name {
         font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-        padding: 0 15px;
+        font-weight: 300;
+        padding: 0px 15px;
+        padding: 0px 25px;
       }
       .project-category {
         text-transform: uppercase;
@@ -1504,7 +1517,8 @@ header {
         font-size: 14px;
       }
       .project-name {
-        font-size: 18px;
+        // font-size: 18px;
+        font-size: 15px;
       }
     }
   }
@@ -1523,6 +1537,7 @@ header {
     }
     .project-name {
       font-size: 22px;
+      font-size: 18px;
     }
   }
 }
@@ -1826,6 +1841,218 @@ body {
 
 section#portfolio.no-padding{
   background-color: $bleu;
+  background-color: white;
+  // color: white;
+  // padding: 40px 0px;
+}
+
+.sr-button{
+  background-color: $bleu;
   color: white;
-  padding: 80px 0px;
+}
+
+.fw400{font-weight: 400 !important;}
+.fw300{font-weight: 300 !important;}
+
+
+.title-bar{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.title-bar h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 0 0 12px 0;
+    display: inline-block;
+    margin: 0;
+    color: #000000;
+    // border-bottom: 1px dotted #AAB1B4;
+    border-bottom: 1px dotted $rose;
+    color: $rose;
+}
+
+#services{
+  border-top: 1px dotted $rose;
+}
+
+.text-blue {
+  color: $bleu;
+}
+
+
+
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  opacity: 0;
+}
+
+.pic-holder:hover span.text-content {
+  opacity: 1;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+  }
+  &:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity = 100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  &:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  a {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity = 0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.hovereffect:hover {
+  a, p, h2 {
+    opacity: 1;
+    filter: alpha(opacity = 100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.portfolio-header{
+    background-color: $bleu;
+}
+
+.portfolio-bar{
+    padding: 50px 0px;
+}
+.portfolio-bar h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 0 0 12px 0;
+    display: inline-block;
+    margin: 0;
+    color: #000000;
+    // border-bottom: 1px dotted #AAB1B4;
+    border-bottom: 1px dotted white;
+    color: white;
 }
