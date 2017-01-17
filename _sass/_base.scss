@@ -1515,6 +1515,9 @@ header {
         text-transform: uppercase;
         font-weight: 600;
         font-size: 14px;
+        font-weight: 300;
+        font-size: 22px;
+        margin-bottom: 10px;
       }
       .project-name {
         // font-size: 18px;
@@ -1534,6 +1537,7 @@ header {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
     .project-category {
       font-size: 16px;
+      font-size: 42px;
     }
     .project-name {
       font-size: 22px;
@@ -1881,6 +1885,10 @@ section#portfolio.no-padding{
   color: $bleu !important;
 }
 
+
+.text-rose {
+  color: $rose !important;
+}
 
 
 
